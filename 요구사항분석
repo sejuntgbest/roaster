@@ -1,0 +1,18 @@
+로스터매니져
+
+Non-Functional Requirements
+1. 매장은 여러개가 있다.
+2. 사원은 모든 매장에서 일한다.
+3. 쉬프트는 종류가 있다.(아침/저녁/새벽/etc)
+4. 사원은 여러명이 있다.
+5. 쉬프트는 하루/주/월/연도를 기록한다.
+6. 쉬프트의 종류는 여러 타입의 시간들을 관리한다
+7. 직원은 휴가가 있다.
+8. 직원은 직급이 있다.
+9. 직원은 시간 대비 급여를 받는다.
+10. 
+
+Functional Requirements
+1. Database Setting up (tools ... etc)
+2. Server Setting up;
+3. 
