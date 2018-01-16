@@ -37,11 +37,20 @@ github 사용법
 
 
 * git panel 을 이용한 커밋 방법
+  * 패널 열기
+    - atom 하단 [file]을 클릭한다.
+
   * Staging 상태로 변경하기
-    - [Stage All]버튼을 클릭 : 모든 파일 
-  ![Alt text](./img/02.use_git_panel.png)
+    - [Stage All]버튼을 클릭 : 모든 파일을 Staging 상태로 이동
+    - 파일 더블클릭 : 해당 파일만 Staging 상태로 변경
 
+      ![Alt text](./img/03.git_panel_01.png)
 
+    - 커밋 메세지를 작성하고 [Commit] 버튼을 클릭한다.
 
+      ![Alt text](./img/02.use_git_panel.png)
 
-  ![Alt text](./img/02.use_git_panel.png)
+  * github로 push 하기
+    - 깃헙 파일서버에 올린다.
+
+    ![Alt text](./img/04.push_to_git.png)
