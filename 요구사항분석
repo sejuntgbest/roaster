@@ -13,6 +13,6 @@ Non-Functional Requirements
 10. 
 
 Functional Requirements
-1. Database Setting up (tools ... etc)
-2. Server Setting up;
-3. 
+1. Database는 mysql을 사용한다.
+2. 서버는 노드를 사용한다
+3. Front는 기본 html을 이용한다.
