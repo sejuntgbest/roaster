@@ -1,4 +1,4 @@
-### 사용자 / 관리자
+### intro
 
 ```plantuml
 @startuml
@@ -7,19 +7,94 @@ actor boss
 
 actor manager
 
-(인트로페이지)
+actor staff
+rectangle 인트로{
 
-(회원가입 페이지)
+boss - 인트로  
 
-(회원가입 정보입력페이지)
+manager - 인트로
 
-(직원등록페이지)  
+staff - 인트로
 
-(직원리스트페이지)
+usecase (인트로페이지)
+}
+@enduml
+```
+### 회원가입
 
-(매장정보페이지)
+```plantuml
+@startuml
 
-(매장전체리스트페이지)
+actor boss
+
+actor manager
+
+actor staff
+
+actor systemManager
+
+rectangle 가입 {
+
+  boss - (회원가입)
+
+  manager - (회원가입)
+
+  staff - (회원가입)
+
+  (회원가입)
+
+  (회원가입) <. (SNS API) : extend
+
+  (회원가입) -- (회원가입 \n정보입력)
+
+  (회원가입 \n정보입력) <. (주소검색) : include
+
+  (회원가입 \n정보입력) -- (회원가입완료)
+
+  systemManager -- (회원가입완료)
+
+}
+
+@enduml
+```
+### 직원관리
+
+```plantuml
+@startuml
+actor manager
+
+actor boss
+
+actor systemManager
+
+rectangle 직원관리{
+
+manager - (직원리스트)
+
+boss - (직원리스트)
+
+systemManager - (직원등록)
+
+(직원등록) - (직원리스트)
+
+(직원리스트) --> staff
+
+}
+
+@enduml
+```
+
+```plantuml
+
+@startuml
+
+rectangle {
+
+  (매장정보페이지)
+
+  (매장전체리스트페이지)
+
+}
 
 (직원월별스케쥴등록페이지)
 
