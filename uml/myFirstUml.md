@@ -24,15 +24,3 @@ Foo1 -> Foo5 : To database
 Foo1 -> Foo6 : To collections
 @enduml
 ```
-
-```plantuml
-@startuml
-@startuml
-
-(First usecase)
-(Another usecase) as (UC2)  
-usecase UC3
-usecase (Last\nusecase) as UC4
-
-@enduml
-```

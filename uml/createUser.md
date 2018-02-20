@@ -17,6 +17,7 @@ manager - 인트로
 staff - 인트로
 
 usecase (인트로페이지)
+
 }
 @enduml
 ```
@@ -162,10 +163,7 @@ actor staff
 (직원개인월별스케쥴조회페이지)
 
 @enduml
-
 ```
-
-
 
 
 ```plantuml
